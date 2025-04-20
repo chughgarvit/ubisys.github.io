@@ -18,6 +18,32 @@
       border-radius: 10px;
     }
   </style>
+   <style>
+    .logo-card {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .logo-img {
+      max-height: 80px;
+      object-fit: contain;
+      margin-bottom: 0.75rem;
+    }
+  
+    .logo-text {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #333;
+    }
+  </style>
+  
 </head>
 <body>
   <!-- Navbar -->
@@ -146,14 +172,14 @@
       <div class="row text-center">
         <div class="col-md-4 d-flex">
           <div class="p-4 border rounded shadow-sm w-100 d-flex flex-column justify-content-center" style="min-height: 180px;">
-            <h4>25+ Publications</h4>
+            <h4>60+ Publications</h4>
             <p>In top conferences including PerCom, COMSNETS, BuildSys, CHASE</p>
           </div>
         </div>
         <div class="col-md-4 d-flex">
           <div class="p-4 border rounded shadow-sm w-100 d-flex flex-column justify-content-center" style="min-height: 180px;">
             <h4>7+ Funded Projects</h4>
-            <p>With DRDO, SERB, NSF, TIH, and Johari Digital</p>
+            <p>With Google, DRDO, SERB, NSF, TIH, and Johari Digital</p>
           </div>
         </div>
         <div class="col-md-4 d-flex">
@@ -165,59 +191,98 @@
       </div>
     </div>
   </section>
-  <!-- Collaborators Section -->
-  <section class="py-5 bg-light">
-    <div class="container">
-      <h2 class="text-center mb-4">National & International Collaborators</h2>
-      <div class="row g-4 text-center">
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_iitkgp.png" alt="IIT Kharagpur"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_iiitg.png" alt="IIIT Guwahati"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_aiims.png" alt="AIIMS Jodhpur"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_umbc.png" alt="UMBC USA"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_unsw.png" alt="UNSW Australia"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_mst.png" alt="Missouri S&T USA"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_bamberg.png" alt="University of Bamberg"></div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/collab_deakin.png" alt="Deakin University"></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Sponsors Section -->
-  <section class="py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Sponsors</h2>
-      <div class="row g-4 text-center">
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/sponsor_google.png" alt="Google Research"></div>
+
+<!-- Collaborators Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">National & International Collaborators</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_iitkgp.png" alt="IIT Kharagpur" class="logo-img">
+          <div class="logo-text">IIT Kharagpur</div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/sponsor_serb.png" alt="SERB"></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_iiitg.png" alt="IIIT Guwahati" class="logo-img">
+          <div class="logo-text">IIIT Guwahati</div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/sponsor_dst.png" alt="DST India"></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_aiims.png" alt="AIIMS Jodhpur" class="logo-img">
+          <div class="logo-text">AIIMS Jodhpur</div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="logo-card"><img src="img/sponsor_tih.png" alt="TIH IIT Jodhpur"></div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_umbc.png" alt="UMBC USA" class="logo-img">
+          <div class="logo-text">UMBC, USA</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_unsw.png" alt="UNSW Australia" class="logo-img">
+          <div class="logo-text">UNSW, Australia</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_mst.png" alt="Missouri S&T USA" class="logo-img">
+          <div class="logo-text">Missouri S&T, USA</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_bamberg.png" alt="University of Bamberg" class="logo-img">
+          <div class="logo-text">Univ. of Bamberg</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/collab_deakin.png" alt="Deakin University" class="logo-img">
+          <div class="logo-text">Deakin University</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- Sponsors Section -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Sponsors</h2>
+    <div class="row g-4 text-center">
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/sponsor_google.jpg" alt="Google Research" class="logo-img">
+          <div class="logo-text">Google Research</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/sponsor_serb.png" alt="SERB" class="logo-img">
+          <div class="logo-text">SERB</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/sponsor_dst.png" alt="DST India" class="logo-img">
+          <div class="logo-text">DST India</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="logo-card">
+          <img src="assets/img/sponsor_tih.png" alt="TIH IIT Jodhpur" class="logo-img">
+          <div class="logo-text">TIH, IIT Jodhpur</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center">
