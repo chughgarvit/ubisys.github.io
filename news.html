@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>News | UbiSys Research Group</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .filter-btn.active {
+      background-color: #343a40;
+      color: white;
+    }
+
+    .news-card {
+      background-color: white;
+      border-left: 5px solid #343a40;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+    }
+
+    .news-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    .news-title {
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .news-date {
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    header {
+      background-color: #343a40;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">UbiSys Lab</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link active" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="publications.html">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="join.html">Join Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<header class="text-white py-5 text-center">
+  <div class="container">
+    <h1 class="display-5 fw-bold">News & Updates</h1>
+    <p class="lead">Latest milestones, awards, and announcements from the UbiSys Lab</p>
+  </div>
+</header>
+
+<!-- Year Filter Buttons -->
+<section class="py-4">
+  <div class="container text-center">
+    <div class="mb-3">
+      <button class="btn btn-outline-dark filter-btn active" onclick="filterYear('all', event)">All Years</button>
+      <button class="btn btn-outline-dark filter-btn" onclick="filterYear('2025', event)">2025</button>
+      <button class="btn btn-outline-dark filter-btn" onclick="filterYear('2024', event)">2024</button>
+      <button class="btn btn-outline-dark filter-btn" onclick="filterYear('2023', event)">2023</button>
+    </div>
+  </div>
+</section>
+
+<!-- News Section -->
+<section class="py-5 bg-light">
+  <div class="container">
+
+    <div class="news-card news-2025">
+      <div class="news-title">[Apr 2025] SpineSense submitted to UIST 2025</div>
+      <div class="news-date">Swayam's work on neck fatigue monitoring using earable IMU is now under review.</div>
+    </div>
+
+    <div class="news-card news-2025">
+      <div class="news-title">[Apr 2025] VEDA system accepted to PerCom 2025</div>
+      <div class="news-date">Congrats to Misaal and team for their vision-based wearable for deafblind users!</div>
+    </div>
+
+    <div class="news-card news-2025">
+      <div class="news-title">[Mar 2025] Best Poster Award @ IEEE PerCom 2025</div>
+      <div class="news-date">Our work BiteSense won Best Poster at the PerCom PhD Forum. Kudos to Swayam!</div>
+    </div>
+
+    <div class="news-card news-2025">
+      <div class="news-title">[Feb 2025] UbiSys presents at COMSNETS 2025</div>
+      <div class="news-date">We presented a paper and hosted a demo booth at COMSNETS 2025, Bangalore.</div>
+    </div>
+
+    <div class="news-card news-2025">
+      <div class="news-title">[Jan 2025] New funded projects and open positions</div>
+      <div class="news-date">Join our team! Open positions for BTP, MTP, PhD, Postdoc and intern roles available now.</div>
+    </div>
+
+    <div class="news-card news-2024">
+      <div class="news-title">[Nov 2024] New collaboration with AIIMS Delhi</div>
+      <div class="news-date">We’ve partnered with AIIMS to develop non-invasive diagnostic tools for cardiovascular risk.</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center">
+  <div class="container">
+    <p class="mb-0 py-3">© 2025 UbiSys Lab, Department of CSE, IIT Jodhpur</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script>
+function filterYear(year, event) {
+  const cards = document.getElementsByClassName("news-card");
+  const buttons = document.getElementsByClassName("filter-btn");
+
+  for (let btn of buttons) btn.classList.remove("active");
+  if (event) event.target.classList.add("active");
+
+  for (let card of cards) {
+    if (year === 'all' || card.classList.contains(`news-${year}`)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  }
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
