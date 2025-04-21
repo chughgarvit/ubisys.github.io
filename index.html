@@ -4,8 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UbiSys Research Group | Home</title>
+
+  <!-- Core CSS -->
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS Animate‑On‑Scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
   <style>
     .carousel-item {
       height: 300px;
@@ -17,8 +23,6 @@
       padding: 1rem;
       border-radius: 10px;
     }
-  </style>
-   <style>
     .logo-card {
       background-color: white;
       padding: 1rem;
@@ -30,24 +34,21 @@
       justify-content: center;
       align-items: center;
     }
-  
     .logo-img {
       max-height: 80px;
       object-fit: contain;
       margin-bottom: 0.75rem;
     }
-  
     .logo-text {
       font-size: 0.9rem;
       font-weight: 500;
       color: #333;
     }
   </style>
-  
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" data-aos="fade-down">
     <div class="container">
       <a class="navbar-brand" href="index.html">UbiSys Lab</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -67,16 +68,16 @@
     </div>
   </nav>
 
-<!-- Slider -->
-<div id="ubisysCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Slider -->
+  <div id="ubisysCarousel" class="carousel slide" data-bs-ride="carousel"
+       data-aos="fade-up" data-aos-duration="1000">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#ubisysCarousel" data-bs-slide-to="4"></button>
     </div>
-  
     <div class="carousel-inner">
       <div class="carousel-item active" style="background-image: url('assets/img/percom.png');">
         <div class="carousel-caption">
@@ -84,62 +85,52 @@
           <p>Garvit presented Full Paper, WiP paper with Dr. Suchetana Chakraborty and Dr. Sandip Chakraborty</p>
         </div>
       </div>
-  
       <div class="carousel-item" style="background-image: url('assets/img/vtc2024.png');">
         <div class="carousel-caption">
           <h5>Full Paper presented @ VTC 2024</h5>
           <p>Osho delivered a stellar presentation on vehicular communication networks (virtually)</p>
         </div>
       </div>
-  
       <div class="carousel-item" style="background-image: url('assets/img/comsnets2025.png');">
         <div class="carousel-caption">
           <h5>UbiSys @ COMSNETS 2025</h5>
           <p>Posters by Garvit, Osho and Susmita!</p>
         </div>
       </div>
-  
       <div class="carousel-item" style="background-image: url('assets/img/buildsys2023.png');">
         <div class="carousel-caption">
           <h5>UbiSys @ BuildSys 2023</h5>
           <p>Dr. Suchetana Chakraborty presented "Sense As You Go"</p>
         </div>
       </div>
-  
       <div class="carousel-item" style="background-image: url('assets/img/sensepod.png');">
         <div class="carousel-caption">
           <h5>SensePod Deployed!</h5>
-          <p>Join us in building edge-AI systems for real-world ambient sensing</p>
+          <p>Join us in building edge‑AI systems for real‑world ambient sensing</p>
         </div>
       </div>
     </div>
-  
     <button class="carousel-control-prev" type="button" data-bs-target="#ubisysCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#ubisysCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span>
     </button>
   </div>
-  
+
   <!-- Hero Banner -->
-  <header class="bg-dark text-white py-5 text-center">
+  <header class="bg-dark text-white py-5 text-center" data-aos="fade-down">
     <div class="container">
       <h1 class="display-5 fw-bold">Welcome to UbiSys Research Group</h1>
-      <p class="lead">Exploring ubiquitous sensing, AIoT, and human-machine interfaces at IIT Jodhpur</p>
+      <p class="lead">Exploring ubiquitous sensing, AIoT, and human‑machine interfaces at IIT Jodhpur</p>
     </div>
   </header>
 
-
- 
-  <!-- About & Achievements Row -->
-  <section class="py-5 bg-light">
+  <!-- About & Achievements -->
+  <section class="py-5 bg-light" data-aos="fade-up">
     <div class="container">
       <div class="row">
-        <!-- Achievements -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <h2>Latest Achievements</h2>
           <ul>
             <li>📄 3 Papers accepted at IEEE PerCom 2025</li>
@@ -150,87 +141,88 @@
             <li>🌏 Internships at UMBC and UNSW</li>
             <li>🎓 PMRF and TCS Fellowship recipients</li>
             <li>✈️ Travel grants from IEEE CS TCCC, ACM IARCS, etc.</li>
-            <li>🏠 Completion of 3D-printed Smart Home & Ambient Lab</li>
+            <li>🏠 Completion of 3D‑printed Smart Home & Ambient Lab</li>
           </ul>
           <a href="news.html" class="btn btn-outline-primary btn-sm">View All News</a>
           <div class="mt-3"></div>
         </div>
-
-        <!-- About Us -->
-        <div class="col-lg-6">
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
           <h2>About Us</h2>
-          <p style="text-align: justify;">The UbiSys Research Group, led by Dr. Suchetana Chakraborty, explores core areas of ubiquitous computing, activity recognition, health sensing, and low-power embedded systems. Our team combines expertise across sensing, signal processing, systems, and HCI to solve real-world challenges.</p>
-          <p style="text-align: justify;"><strong>Lab Facilities:</strong> Sensepod++ – Connected & sensor-instrumented state-of-the-art testbed, Smartwatches, Earables, Smartphones, Embedded Boards (Arduino, Raspberry Pi, ESP32), Wireless Modules (BLE, LoRa), Prototyping Kits, Edge-AI Devices, MEMS Sensors, Biomedical Sensors, Environmental Sensors, High-Performance Workstations, Audio Interfaces, mm-Wave Tools, Cameras, Touch Displays, Mechanical Toolkits, and Network Infrastructure.
+          <p style="text-align: justify;">
+            The UbiSys Research Group, led by Dr. Suchetana Chakraborty, explores core areas of ubiquitous computing, activity recognition, health sensing, and low‑power embedded systems.
+          </p>
+          <p style="text-align: justify;">
+            <strong>Lab Facilities:</strong> Sensepod++ testbed, Smartwatches, Earables, Smartphones, Embedded Boards (Arduino, Raspberry Pi, ESP32), Wireless Modules (BLE, LoRa), Prototyping Kits, Edge‑AI Devices, MEMS & Biomedical Sensors, Environmental Sensors, High‑Performance Workstations, Audio Interfaces, mm‑Wave Tools, Cameras, Touch Displays, Mechanical Toolkits, Network Infrastructure.
           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Research Areas Section -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Research Areas</h2>
-    <div class="row g-4 text-center">
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h5>Ubiquitous Computing</h5>
-          <p>Systems that blend seamlessly into daily life environments.</p>
+  <!-- Research Areas -->
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Research Areas</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Ubiquitous Computing</h5>
+            <p>Systems that blend seamlessly into daily life environments.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h5>Edge Computing & AIoT</h5>
-          <p>Low-latency intelligence at the network edge using sensors and embedded AI.</p>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Edge Computing & AIoT</h5>
+            <p>Low‑latency intelligence at the network edge using sensors and embedded AI.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h5>Human-Centered Interfaces</h5>
-          <p>Interfaces for wearable tech, accessibility, and human-sensing.</p>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Human‑Centered Interfaces</h5>
+            <p>Interfaces for wearable tech, accessibility, and human‑sensing.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h5>Smart Health</h5>
-          <p>Assistive and diagnostic technologies for personalized healthcare.</p>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="400">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Smart Health</h5>
+            <p>Assistive and diagnostic technologies for personalized healthcare.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h5>Autonomous Systems</h5>
-          <p>Sensor-fused platforms for mobility, drones, and intelligent monitoring.</p>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Autonomous Systems</h5>
+            <p>Sensor‑fused platforms for mobility, drones, and intelligent monitoring.</p>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="p-4 border rounded shadow-sm h-100">
-          <h5>Wireless & Sensor Networks</h5>
-          <p>Communication, synchronization, and power-efficiency in embedded systems.</p>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="600">
+          <div class="p-4 border rounded shadow-sm h-100">
+            <h5>Wireless & Sensor Networks</h5>
+            <p>Communication, synchronization, and power‑efficiency in embedded systems.</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-  <!-- Recent Highlights -->
-  <section class="py-5">
+  <!-- Lab Highlights -->
+  <section class="py-5" data-aos="fade-up">
     <div class="container">
       <h2 class="text-center mb-4">Lab Highlights</h2>
-      <div class="row text-center">
-        <div class="col-md-4 d-flex">
-          <div class="p-4 border rounded shadow-sm w-100 d-flex flex-column justify-content-center" style="min-height: 180px;">
+      <div class="row text-center g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="p-4 border rounded shadow-sm h-100">
             <h4>60+ Publications</h4>
             <p>In top conferences including PerCom, COMSNETS, BuildSys, CHASE</p>
           </div>
         </div>
-        <div class="col-md-4 d-flex">
-          <div class="p-4 border rounded shadow-sm w-100 d-flex flex-column justify-content-center" style="min-height: 180px;">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="p-4 border rounded shadow-sm h-100">
             <h4>7+ Funded Projects</h4>
             <p>With Google, DRDO, SERB, NSF, TIH, and Johari Digital</p>
           </div>
         </div>
-        <div class="col-md-4 d-flex">
-          <div class="p-4 border rounded shadow-sm w-100 d-flex flex-column justify-content-center" style="min-height: 180px;">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="p-4 border rounded shadow-sm h-100">
             <h4>15+ Researchers</h4>
             <p>Including PhD, MTech, BTP, and RA members</p>
           </div>
@@ -239,105 +231,112 @@
     </div>
   </section>
 
-
-<!-- Collaborators Section -->
-<section class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">National & International Collaborators</h2>
-    <div class="row g-4 text-center">
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_iitkgp.png" alt="IIT Kharagpur" class="logo-img">
-          <div class="logo-text">IIT Kharagpur</div>
+  <!-- Collaborators -->
+  <section class="py-5 bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">National & International Collaborators</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="logo-card">
+            <img src="assets/img/collab_iitkgp.png" alt="IIT Kharagpur" class="logo-img">
+            <div class="logo-text">IIT Kharagpur</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_iiitg.png" alt="IIIT Guwahati" class="logo-img">
-          <div class="logo-text">IIIT Guwahati</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="logo-card">
+            <img src="assets/img/collab_iiitg.png" alt="IIIT Guwahati" class="logo-img">
+            <div class="logo-text">IIIT Guwahati</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_aiims.png" alt="AIIMS Jodhpur" class="logo-img">
-          <div class="logo-text">AIIMS Jodhpur</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="logo-card">
+            <img src="assets/img/collab_aiims.png" alt="AIIMS Jodhpur" class="logo-img">
+            <div class="logo-text">AIIMS Jodhpur</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_umbc.png" alt="UMBC USA" class="logo-img">
-          <div class="logo-text">UMBC, USA</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="logo-card">
+            <img src="assets/img/collab_umbc.png" alt="UMBC USA" class="logo-img">
+            <div class="logo-text">UMBC, USA</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_unsw.png" alt="UNSW Australia" class="logo-img">
-          <div class="logo-text">UNSW, Australia</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="500">
+          <div class="logo-card">
+            <img src="assets/img/collab_unsw.png" alt="UNSW Australia" class="logo-img">
+            <div class="logo-text">UNSW, Australia</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_mst.png" alt="Missouri S&T USA" class="logo-img">
-          <div class="logo-text">Missouri S&T, USA</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="600">
+          <div class="logo-card">
+            <img src="assets/img/collab_mst.png" alt="Missouri S&T USA" class="logo-img">
+            <div class="logo-text">Missouri S&T, USA</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_bamberg.png" alt="University of Bamberg" class="logo-img">
-          <div class="logo-text">Univ. of Bamberg</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="700">
+          <div class="logo-card">
+            <img src="assets/img/collab_bamberg.png" alt="Univ. of Bamberg" class="logo-img">
+            <div class="logo-text">Univ. of Bamberg</div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/collab_deakin.png" alt="Deakin University" class="logo-img">
-          <div class="logo-text">Deakin University</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Sponsors Section -->
-<section class="py-5">
-  <div class="container">
-    <h2 class="text-center mb-4">Sponsors</h2>
-    <div class="row g-4 text-center">
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/sponsor_google.jpg" alt="Google Research" class="logo-img">
-          <div class="logo-text">Google Research</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/sponsor_serb.png" alt="SERB" class="logo-img">
-          <div class="logo-text">SERB</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/sponsor_dst.png" alt="DST India" class="logo-img">
-          <div class="logo-text">DST India</div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="logo-card">
-          <img src="assets/img/sponsor_tih.png" alt="TIH IIT Jodhpur" class="logo-img">
-          <div class="logo-text">TIH, IIT Jodhpur</div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="800">
+          <div class="logo-card">
+            <img src="assets/img/collab_deakin.png" alt="Deakin University" class="logo-img">
+            <div class="logo-text">Deakin University</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Sponsors -->
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Sponsors</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+          <div class="logo-card">
+            <img src="assets/img/sponsor_google.jpg" alt="Google Research" class="logo-img">
+            <div class="logo-text">Google Research</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+          <div class="logo-card">
+            <img src="assets/img/sponsor_serb.png" alt="SERB" class="logo-img">
+            <div class="logo-text">SERB</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+          <div class="logo-card">
+            <img src="assets/img/sponsor_dst.png" alt="DST India" class="logo-img">
+            <div class="logo-text">DST India</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6" data-aos="zoom-in" data-aos-delay="400">
+          <div class="logo-card">
+            <img src="assets/img/sponsor_tih.png" alt="TIH IIT Jodhpur" class="logo-img">
+            <div class="logo-text">TIH, IIT Jodhpur</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white text-center">
+  <footer class="bg-dark text-white text-center" data-aos="fade-up">
     <div class="container">
-      <p class="mb-0 py-3">© 2025 UbiSys Lab, Department of CSE, IIT Jodhpur</p>
+      <p class="mb-0 py-3">© 2025 UbiSys Lab, Department of CSE, IIT Jodhpur</p>
     </div>
   </footer>
 
+  <!-- Core JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
 </body>
 </html>
