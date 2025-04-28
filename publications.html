@@ -86,9 +86,6 @@
         </h2>
         <div id="collapse2025" class="accordion-collapse collapse show" data-bs-parent="#pubAccordion">
           <div class="accordion-body">
-            <div class="publication conference 2025 hci sensing">
-              <p><strong>S. Chugh, A. Kumar, S. Chakraborty.</strong> <em>Paper Title.”</em> (Under Review).</p>
-            </div>
             <div class="publication conference 2025 ai embedded">
               <p><strong>G. Chugh, S. Raju, S. Chakraborty.</strong> <em>"VEDA: Vision-Aided Braille System for Deafblind Navigation.”</em> PerCom 2025 (To Appear).</p>
             </div>
@@ -514,7 +511,7 @@
     // Check if any publications are visible within each accordion body
     const accordionBodies = document.querySelectorAll('.accordion-body');
     accordionBodies.forEach(body => {
-      const visiblePublications = body.querySelectorAll('.publication[style*="display: \'\';"]');
+      const visiblePublications = body.querySelectorAll('.publication:not([style*="display: none"])');
       const noResultsMessage = body.querySelector('.no-results');
 
       if (visiblePublications.length === 0) {
@@ -530,6 +527,7 @@
         }
       }
     });
+    AOS.refresh(); // Recalculate AOS elements after filtering
   }
 
   function updateButtonStates(filterGroup) {
